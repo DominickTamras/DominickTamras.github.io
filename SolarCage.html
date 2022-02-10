@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Game Design - CyberCross</title>
+		<title>Game Design - Solar Cage</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -46,7 +46,7 @@
 							<p>Solar Cage is an FPS parkour game in the distant future where humanity has almost fully converted themselves into machines. You play a janitor robot, that works in a dyson sphere facility around the sun. Suddenly one day you are contacted by an unknown force and given one objective only: BLOW UP THE SUN. The game is under current development for the summer and fall! </p>
 							<p>A total of 9 levels that has the player battle sentries along the way, jumping across platforms, wall running, sliding and dodging obstacles to make it to the end of each level. While as well uncovering the story through terminals and other secrets placed around each level.</p>
 							
-							<p><b>The game is under current development for the summer and fall! </b></p>
+						
 							
 							<p><b>Project Responsibilities: </b></p>
 
@@ -55,7 +55,7 @@
 							<li>Gameplay Designer/Programmer, programmed and designed an obstacle manager using event actions, designed the different enemy types, wrote an aiming system for the A.I, and other general gameplay components.</li>
 							<li>Technical/Post Effects Artist, used the Shader Node Graph to create shaders in game, such as the sun, enemy bullet effects and more. Used VFX Graph for creating the particle effects in game. Used Unity's post processing effects for camera effects. Animated and worked with rig for shooting animation. </li>
 							<!-- <li>Trailer Editor, edited the trailer for the game. </li> -->
-							<b><p>DOWNLOAD LINK BELOW!</p></b>
+							<b><p style="padding-top: 50px;">DOWNLOAD LINK BELOW!</p></b>
 							<a href="https://store.steampowered.com/app/1795640/SOLAR_CAGE/"> <b>STEAM PAGE</b></a> </p>
 							<!-- <a href="https://dominicktamras.itch.io/o"> <b>Download.</b></a> </p> -->
 							</div>
@@ -70,10 +70,10 @@
 									<input type="radio" name = "r" id="r4">
 									<div class = "slide s1">
 										<div class = "imgHolder">
-											<img src="images/SolarCage_Gamepla.gif" alt="">
+											<img src="images/Production1.jpg" alt="">
 										<div class = "overlay overlay--blur">
 											<p class = "image_description">
-												For the level design of this game, I wanted players to really utilize the wall running/jumping from the character controller, so they can be able to gain high speeds while shooting.
+												I always organized meetings with team members to have discussions and brainstorm different parts of the game. Level beats, mechanics, art and sound direction were mainly the topics of these meetings.
 											</p>
 										</div>
 									</div>
@@ -81,10 +81,12 @@
 										
 									<div class = "slide">
 										<div class = "imgHolder">
-											<img src="images/SolarCage_EnemyTrack.gif" alt="">
+											<img src="images/SolarCage_Gamepla.gif" alt="">
 										<div class = "overlay overlay--blur">
 											<p class = "image_description"> 
-												Enemy tracking was pretty important, so to find a perfect balance, I made the bullets projectiles rather than hitscan/raycast, and the tracking accuracy changes how fast and how close the player is to the enemy.
+												For the level design of this game, I wanted players to really utilize the wall running/jumping from the character controller, so they can be able to gain high speeds while shooting.
+
+												
 											</p>
 										</div>
 									</div>
@@ -108,8 +110,7 @@
 											<img src="images/SolarCage_DEATH.gif" alt="">
 										<div class = "overlay overlay--blur">
 											<p class = "image_description">
-												Using the built in post process effects in Unity, making something like the death screen had to really convey the player was this kind of robot, having an error screen and glitch effect reflect that.
-		
+												Using the built in post process effects in Unity, making something like the death screen had to really immerse the player as being this robotic entity. A lot of the other U.I in the game had to reflect this as well, including even down to the buttons.		
 											</p>
 										</div>
 									</div>
@@ -136,22 +137,40 @@
 							</div>
 
 							<h2 class="major">Under the Hood:</h2>
-								
-							<img src="images/Production1.jpg" width="400" height="400" alt="" >
-									<p class = "image_description">
-										I always organized meetings with team memebers to white board out current tasks and issues, which helped organize our game a lot.
+							<div style="margin-bottom: 80px;">
+							<div style= "float: left; margin-right: 30px;">
+								<img src="images/SolarCage_EnemyTrack.gif" width="650" height="400" alt="" >
+							</div>
+								<div style="max-width: 1300px; padding-right: 50px; margin-bottom: 60px;">
+									Enemy tracking was pretty important as the enemies in game were stationary, so to find a perfect balance, I made the bullets projectiles rather than hitscan/raycast, and the tracking accuracy changes how fast and how close the player is to the enemy. If the player was slow below a certain threshold, it’d predict the path the player is taking and shoot ahead just a bit, if they were at certain ranges, the accuracy would change accordingly (closer more accurate, far away less accurate.) This incentive would be to keep the player moving, while still being able to dodge around the bullets. The subtlety of how the enemy works could also be noticed by players who keep an eye out for it, allowing them to fight around this ability the enemies possess.     								</div>
+							</div>
 
-									</p>
-								
-									<img src="images/Production2.jpg" width="400" height="400" alt="" >
-									<p class = "image_description">
-										This was an early concept of level design I did for the game. I came across the challenge of how to incorporate our mechanics in a fluid and natural progression of both use and difficulty.
-									</p>
+							<div style="margin-bottom: 80px;">
+							<div style= "float: right; margin-left: 30px;">
+								<img src="images/Production2.png" width="750" height="400" alt="" >
+							</div>
+								<div style="max-width: 900px; padding-left: 50px; margin-bottom: 80px;">
+									This is an example of some of the level layouts I did for the game for the finalized levels. I cross referenced some other parkour games and movement shooters whose approach to platforming would influence our own design, placement of enemies and obstacles. Having slopes that players can slider-surf on to gain speed, giving them about 3 different approaches using the floating walls to reach the end and placing enemies appropriately based on that approach was core to this specific beat.							
+								</div>
 
+							<div style="margin-bottom: 0px;">
+								<div style= "float: left; margin-right: 30px;">
+									<img src="images/Obstacles.gif" width="750" height="400" alt="" >
+								</div>
+									<div style="max-width: -800px; padding-right: 50px; margin-top: 130px; ">
+										An important tool I made in the game was an obstacle manager. Essentially this manager would allow us to make a variety of obstacles by just changing some values, making objects spawn or creating events. From something simple as a spinning laser obstacle as shown at the start to something a bit more complex, with a trigger attached to spawning a cage around the player and forcing them to fight inside it. I made the use of this manager easy to handle for quick iterations. 	 
+									</div>
+								</div>
+									
+							
+							<!-- <div>
+								<div style="float: left;">
 									<img src="images/Production3.png" width="1500" height="300" alt="" >
-									<p class = "image_description">
-										This is a portion of code that the enemy predicts the player's movement, grabbing it's transform and comparing it to the prediction's distance. I wanted to optimize the prediction to not be too powerful, so I included a dampener that would make it a smooth transition rather than an instant lock on.
-									</p>
+								</div>
+									<div>
+									This is a portion of code that the enemy predicts the player's movement, grabbing it's transform and comparing it to the prediction's distance. I wanted to optimize the prediction to not be too powerful, so I included a dampener that would make it a smooth transition rather than an instant lock on.
+									</div>
+							</div> -->
 						
 							
 							
@@ -164,7 +183,7 @@
 			<footer id="footer" class="wrapper alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					
 					</ul>
 				</div>
 			</footer>
