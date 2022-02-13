@@ -172,31 +172,7 @@
 									</div>
 							</div> -->
 						
-							<h2 class="major">Under the Hood:</h2>
-							<div style="margin-bottom: 80px;">
-							<div style= "float: left; margin-right: 30px;">
-								<img src="images/SolarCage_EnemyTrack.gif" width="650" height="400" alt="" >
-							</div>
-								<div style="max-width: 1300px; padding-right: 50px; margin-bottom: 60px;">
-									Enemy tracking was pretty important as the enemies in game were stationary, so to find a perfect balance, I made the bullets projectiles rather than hitscan/raycast, and the tracking accuracy changes how fast and how close the player is to the enemy. If the player was slow below a certain threshold, it’d predict the path the player is taking and shoot ahead just a bit, if they were at certain ranges, the accuracy would change accordingly (closer more accurate, far away less accurate.) This incentive would be to keep the player moving, while still being able to dodge around the bullets. The subtlety of how the enemy works could also be noticed by players who keep an eye out for it, allowing them to fight around this ability the enemies possess.     								</div>
-							</div>
-
-							<div style="margin-bottom: 80px;">
-							<div style= "float: right; margin-left: 30px;">
-								<img src="images/Production2.png" width="750" height="400" alt="" >
-							</div>
-								<div style="max-width: 900px; padding-left: 50px; margin-bottom: 80px;">
-									This is an example of some of the level layouts I did for the game for the finalized levels. I cross referenced some other parkour games and movement shooters whose approach to platforming would influence our own design, placement of enemies and obstacles. Having slopes that players can slider-surf on to gain speed, giving them about 3 different approaches using the floating walls to reach the end and placing enemies appropriately based on that approach was core to this specific beat.							
-								</div>
-
-							<div style="margin-bottom: 0px;">
-								<div style= "float: left; margin-right: 30px;">
-									<img src="images/Obstacles.gif" width="750" height="400" alt="" >
-								</div>
-									<div style="max-width: -800px; padding-right: 50px; margin-top: 130px; ">
-										An important tool I made in the game was an obstacle manager. Essentially this manager would allow us to make a variety of obstacles by just changing some values, making objects spawn or creating events. From something simple as a spinning laser obstacle as shown at the start to something a bit more complex, with a trigger attached to spawning a cage around the player and forcing them to fight inside it. I made the use of this manager easy to handle for quick iterations. 	 
-									</div>
-								</div>
+							
 							
 							
 						</div>
