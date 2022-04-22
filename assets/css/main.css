@@ -76,11 +76,11 @@ body
 {
 	height: 100%;
 	left: 0;
-	background: url(/images/SolarCage_COVER_.jpg);
+	background-image: url(/images/SolarCage_COVER_.jpg);
 	position: absolute;
 	width: 100%;
 	transition: 1s;
-
+	display: block;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position:center;
@@ -94,21 +94,16 @@ body
 }
 
 
-.card:hover span
-{
-	transform: translateY(-100%);
-	transition: .8s;
-}
 
 .content
 {
 	color: white;
+	position: relative;
 	text-align: center;
 	padding: 80px 20px;
 	width: 100%;
 	height: 100%;
 	box-sizing: border-box;
-	transform: translateY(100%);
 	transition: 1s;
 	overflow: hidden;
 }
@@ -125,10 +120,7 @@ body
 
 }
 
-.card:hover .content
-{
-	transform: translateY(0%);
-}
+
 
 .card2{
 	width: 360px;
@@ -164,21 +156,17 @@ body
 }
 
 
-.card2:hover span
-{
-	transform: translateY(-100%);
-	transition: .8s;
-}
+
 
 .content2
 {
 	color: white;
 	text-align: center;
+	position: relative;
 	padding: 80px 20px;
 	width: 100%;
 	height: 100%;
 	box-sizing: border-box;
-	transform: translateY(100%);
 	transition: 1s;
 	overflow: hidden;
 }
@@ -195,10 +183,6 @@ body
 
 }
 
-.card2:hover .content2
-{
-	transform: translateY(0%);
-}
 
 .card3{
 	width: 360px;
@@ -233,21 +217,17 @@ body
 }
 
 
-.card3:hover span
-{
-	transform: translateY(-100%);
-	transition: .8s;
-}
+
 
 .content3
 {
 	color: white;
 	text-align: center;
+	position: relative;
 	padding: 80px 20px;
 	width: 100%;
 	height: 100%;
 	box-sizing: border-box;
-	transform: translateY(100%);
 	transition: 1s;
 	overflow: hidden;
 }
@@ -264,44 +244,23 @@ body
 
 }
 
-.card3:hover .content3
-{
-	transform: translateY(0%);
-}
-
-
-
-.card3:hover span
-{
-	transform: translateY(-100%);
-	transition: .8s;
-}
-
-
-.card3:hover .content3
-{
-	transform: translateY(0%);
-}
 
 .card4{
 	width: 360px;
 	height: 360px;
 	background: black;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
-	margin: 0;
+	margin: 0%;
 	position: relative;
 	border-radius: 10px;
-	display: inline-block;
 	overflow: hidden;
-	
-
 }
 
 .card4 span
 {
 	height: 100%;
 	left: 0;
-	background: url(/images/TempCharon.jpg);
+	background: url(/images/Charon.png);
 	position: absolute;
 	width: 100%;
 	transition: 1s;
@@ -319,21 +278,17 @@ body
 }
 
 
-.card4:hover span
-{
-	transform: translateY(-100%);
-	transition: .8s;
-}
+
 
 .content4
 {
 	color: white;
 	text-align: center;
+	position: relative;
 	padding: 80px 20px;
 	width: 100%;
 	height: 100%;
 	box-sizing: border-box;
-	transform: translateY(100%);
 	transition: 1s;
 	overflow: hidden;
 }
@@ -348,11 +303,6 @@ body
 	padding: 10px;
 	color: purple;
 
-}
-
-.card4:hover .content4
-{
-	transform: translateY(0%);
 }
 
 .container {
