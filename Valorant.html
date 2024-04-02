@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Game Design - VALORANT</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+	</head>
+
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Return</a>
+				<!-- <nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="generic.html" class="active">Generic</a></li>
+						<li><a href="elements.html">Elements</a></li>
+					</ul>
+				</nav> -->
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper fullscreen fade-up">
+						<div class="inner">
+							
+							<h1 class="major">VALORANT</h1>
+								 <!-- <video width="800" height="auto" controls>
+								<source src="Video/SolarCageTrailer.mp4" type="video/mp4"> 
+							  </video> -->
+
+							  <ul class="a">
+							<div class="descriptbg">
+							<p>VALORANT is a tactical shooter created by Riot Games, featuring a multitude of Agents that offer a variety of gameplay styles and as well multiple customization options to give player expression. </p>
+							
+						
+							
+							<p><b>Project Responsibilities: </b></p>
+
+							<li>Integration Artist- Helped integrate art from our Preimium Content team (Gun Skins, Sprays, Cards, Buddies, Etc.) to work in engine and ensure presentation is appealing to players.</li>
+							<li>Worked in Blueprints to refactor skin logic to work correctly in the Collections screen for when our team wants to showcase features of our more Premium weapons. These refactors usually included the way material gets displayed, timing and usage of VFX, use of Timeline nodes to animate materials, vector math when needed to change transform of parts of the weapon, and ensure optimization with clean code.</li>
+							<li>Experienced in pitching and creating debug tools, aswell exetending currently existing tools in which we interact with weapon skins and gunbuddies to assist with workflow speed and address new needs.</li>
+							<li>Worked and collaborated with stakeholders involved, such as Marketing and our Art teams.</li>
+							<li>Created documentation and workflows when introducing improvements and new ideas to how weapons get presented on the Collections page.</li>
+							
+					
+							<!-- <li>Trailer Editor, edited the trailer for the game. </li> -->
+							<!-- <a href="https://store.steampowered.com/app/1795640/SOLAR_CAGE/"> <b>STEAM PAGE</b></a> </p> -->
+							<!-- <a href="https://dominicktamras.itch.io/o"> <b>Download.</b></a> </p> -->
+							</div>
+						
+
+							<h2 class="major">Released work highlights:</h2>
+							<div style="margin-bottom: 150px;">
+							<div style= "float: left; margin-right: 30px;">
+								<img src="images/ValExample1.gif" width="600" height="338" alt="" >
+							</div>
+								<div style="max-width: 1800px; padding-right: 200px; margin-bottom: 100px;">
+									Each weapon skin when handed over to our team was always a unique problem to be solved on how we'd want to display it on the Collections page. This for example is the VCT Team Capsules we released in partnership with our Esport teams. This holographic effect was an inspect that can be viewed in game however it was oriented to be viewed at an angle that wasn't flat on it's side and didn't have a transition end effect to enter back into it's idle state. These 2 major changes I had to implement through Blueprints to fit in the context of the Collections screen.</div>
+							</div>
+
+							<div style="margin-bottom: 150px;">
+								<div style= "float: left; margin-right: 30px;">
+									<img src="images/ValExample2.gif" width="600" height="338" alt="" >
+								</div>
+									<div style="max-width: 1800px; padding-right: 100px; margin-bottom: 100px;">
+										Presentation is key to representing the higher end skin sets we offered, so picking out which animations (Inspect, Reload, Equip, ETC) and their associated VFX, material animations and so fourth were critical to displaying and highlighting the major effects the skins offer. For Valiant Hero, I really wanted to showcase the staff animation and mountain/clouds forming, this took some refactoring to work in the Collections page and present it the way we'd like to showcase the skins.</div>
+								</div>
+	
+
+							<div style="margin-bottom: 150px;">
+							<div style= "float: right; margin-left: 30px;">
+								<img src="images/ValExample3.gif" width="600" height="338" alt="">
+							</div>
+								<div style="max-width: 1800px; padding-left: 100px; margin-bottom: 100px;">
+									
+									Taking into account different states and screens within our Collections page, it's important when setting up the Blueprints to check for the context the skin was in. Here for example, when viewing this skin on our Buddies screen, the Vandal's mountains and cloud effects would already be appearing and the animation won't play. This was a deliberate choice as to not make the effects play each time when switching to a different buddy.
+
+								</div>
+
+							<div style="margin-bottom: 150px;">
+								<div style= "float: left; margin-right: 30px;">
+									<img src="images/ValExample4.gif" width="600" height="388" alt="" >
+								</div>
+									<div style="max-width: -700px; padding-right: 100px; margin-top: 170px; ">
+										Sometimes weapons, especially the melee would have models unique to the Collections screen that our team had to develop. Here the Kuronami melee, had no chain that can be viewed in 3rd person since the original intent of the weapon was to be viewed in 1st person. I collaborated with an artist to design a unique chain model for Collections screen, then set it up in Blueprints with this new model while ensuring materials and effects still worked correctly for it. Each weapon as you may notice has a pivot when you hold the mouse on the weapon and move around, which also is usually critical in our melee set up. I developed a pivot point debug tool so we'd know where the pivot is at visually in engine to help this workflow faster.
+									</div>
+								</div>
+									
+							
+							<!-- <div>
+								<div style="float: left;">
+									<img src="images/Production3.png" width="1500" height="300" alt="" >
+								</div>
+									<div>
+									This is a portion of code that the enemy predicts the player's movement, grabbing it's transform and comparing it to the prediction's distance. I wanted to optimize the prediction to not be too powerful, so I included a dampener that would make it a smooth transition rather than an instant lock on.
+									</div>
+							</div> -->
+						
+						
+							
+							
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+					
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
