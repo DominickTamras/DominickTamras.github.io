@@ -38,8 +38,8 @@
 						<div class="inner">
 							
 							<h1 class="major">SOLAR CAGE</h1>
-								 <video width="800" height="auto" controls>
-								<source src="Video/SolarCageTrailer.mp4" type="video/mp4"> 
+							   <video controls style="max-width: 100%; height: auto;">
+								<source src="Video/SolarCageTrailer.mp4" type="video/mp4" > 
 							  </video>
 
 							  <ul class="a">
@@ -71,7 +71,7 @@
 									<input type="radio" name = "r" id="r4">
 									<div class = "slide s1">
 										<div class = "imgHolder">
-											<img src="images/Production1.jpg" alt="">
+											<img src="images/Production1.jpg" alt="" style="max-width: 100%; height: auto;">
 										<div class = "overlay overlay--blur">
 											<p class = "image_description">
 												I always organized meetings with team members to have discussions and brainstorm different parts of the game. Level beats, mechanics, art and sound direction were mainly the topics of these meetings.
@@ -82,7 +82,7 @@
 										
 									<div class = "slide">
 										<div class = "imgHolder">
-											<img src="images/SolarCage_Gamepla.gif" alt="">
+											<img src="images/SolarCage_Gamepla.gif" alt="" style="max-width: 100%; height: auto;">
 										<div class = "overlay overlay--blur">
 											<p class = "image_description"> 
 												For the level design of this game, I wanted players to really utilize the wall running/jumping from the character controller, so they can be able to gain high speeds while shooting.
@@ -96,7 +96,7 @@
 									
 									<div class = "slide">
 										<div class = "imgHolder">
-											<img src="images/SolarCage_SUN.gif" alt="">
+											<img src="images/SolarCage_SUN.gif" alt="" style="max-width: 100%; height: auto;">
 										<div class = "overlay overlay--blur">
 											<p class = "image_description">
 												Creating the main set piece of the game, the sun, I really wanted to go all out on the shaders for it. Using multiple shader layers that include a distortion effect and as well a disappearing and reappearing noise to make the sun feel 'alive'.
@@ -108,7 +108,7 @@
 									</div>
 									<div class = "slide">
 										<div class = "imgHolder">
-											<img src="images/SolarCage_DEATH.gif" alt="">
+											<img src="images/SolarCage_DEATH.gif" alt=""style="max-width: 100%; height: auto;">
 										<div class = "overlay overlay--blur">
 											<p class = "image_description">
 												Using the built in post process effects in Unity, making something like the death screen had to really immerse the player as being this robotic entity. A lot of the other U.I in the game had to reflect this as well, including even down to the buttons.		
@@ -140,7 +140,7 @@
 							<h2 class="major">Under the Hood:</h2>
 							<div style="margin-bottom: 80px;">
 							<div style= "float: left; margin-right: 30px;">
-								<img src="images/SolarCage_EnemyTrack.gif" width="650" height="400" alt="" >
+								<img src="images/SolarCage_EnemyTrack.gif" width="650" height="400" alt="" style=" max-width: 100%; height: auto;">
 							</div>
 								<div style="max-width: 1300px; padding-right: 50px; margin-bottom: 60px;">
 									Enemy tracking was pretty important as the enemies in game were stationary, so to find a perfect balance, I made the bullets projectiles rather than hitscan/raycast, and the tracking accuracy changes how fast and how close the player is to the enemy. If the player was slow below a certain threshold, it’d predict the path the player is taking and shoot ahead just a bit, if they were at certain ranges, the accuracy would change accordingly (closer more accurate, far away less accurate.) This incentive would be to keep the player moving, while still being able to dodge around the bullets. The subtlety of how the enemy works could also be noticed by players who keep an eye out for it, allowing them to fight around this ability the enemies possess.     								</div>
@@ -148,7 +148,7 @@
 
 							<div style="margin-bottom: 80px;">
 							<div style= "float: right; margin-left: 30px;">
-								<img src="images/Production2.png" width="750" height="400" alt="" >
+								<img src="images/Production2.png" width="750" height="400" alt="" style="max-width: 100%; height: auto;" >
 							</div>
 								<div style="max-width: 900px; padding-left: 50px; margin-bottom: 80px;">
 									This is an example of some of the level layouts I did for the game for the finalized levels. I cross referenced some other parkour games and movement shooters whose approach to platforming would influence our own design, placement of enemies and obstacles. Having slopes that players can slider-surf on to gain speed, giving them about 3 different approaches using the floating walls to reach the end and placing enemies appropriately based on that approach was core to this specific beat.							
@@ -156,7 +156,7 @@
 
 							<div style="margin-bottom: 0px;">
 								<div style= "float: left; margin-right: 30px;">
-									<img src="images/Obstacles.gif" width="750" height="400" alt="" >
+									<img src="images/Obstacles.gif" width="750" height="400" alt="" style="max-width: 100%; height: auto;" >
 								</div>
 									<div style="max-width: -800px; padding-right: 50px; margin-top: 130px; ">
 										An important tool I made in the game was an obstacle manager. Essentially this manager would allow us to make a variety of obstacles by just changing some values, making objects spawn or creating events. From something simple as a spinning laser obstacle as shown at the start to something a bit more complex, with a trigger attached to spawning a cage around the player and forcing them to fight inside it. I made the use of this manager easy to handle for quick iterations. 	 

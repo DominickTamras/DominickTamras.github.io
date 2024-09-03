@@ -120,8 +120,71 @@ body
 
 }
 
+@media (max-width: 600px)
+
+{
+	/* Hover card code */
+.card{
+	width: 360px;
+	height: 360px;
+	background: black;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+	margin: 0;
+	position: relative;
+	display: inline-block;
+	border-radius: 10px;
+	overflow: hidden;
+	background-position:center;
+}
+
+.card span
+{
+	height: 100%;
+	left: 0;
+	background-image: url(/images/SolarCage_COVER_.jpg);
+	position: absolute;
+	width: 100%;
+	transition: 1s;
+	display: block;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+.card span :nth-child(1)
+{
+	z-index: 10;
+	width: 25%;
+	transition-delay: 0;
+}
 
 
+
+.content
+{
+	color: white;
+	position: relative;
+	text-align: center;
+	padding: 80px 20px;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	transition: 1s;
+	overflow: hidden;
+}
+
+.content a
+{
+	width: 100px;
+	text-decoration: none;
+	border-radius: 50px;
+	border: 1px purple;
+	margin: auto;
+	padding: 10px;
+	color: purple;
+
+}
+}
 .card2{
 	width: 360px;
 	height: 360px;
@@ -648,6 +711,90 @@ input[name = "r"]
 	margin-left: -60%;
 }
 
+@media (max-width: 600px)
+{
+.slides
+{
+	width: 500%;
+	height: 100%;
+	display: flex;
+	
+}
+
+.slide
+{
+	width: 20%;
+	transition: 0.6s;
+}
+
+
+
+.slide img
+{
+	width: 100%;
+	height: 100%;
+		
+}
+
+.overlay
+{
+	position:absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	opacity: 0;
+	text-align: center;
+	transition: opacity 0.25s;
+}
+
+.overlay--blur
+{
+	backdrop-filter: blur(5px);
+}
+
+
+
+.overlay:hover
+{
+	opacity: 1;
+}
+
+
+
+.image_description
+{
+	font-size: 1.25em;
+	margin-top: 0.25em;
+
+}
+
+
+
+#r1:checked ~ .s1
+{
+	margin-left: 0;
+}
+#r2:checked ~ .s1
+{
+	margin-left: -20%;
+}
+#r3:checked ~ .s1
+{
+	margin-left: -40%;
+}
+#r4:checked ~ .s1
+{
+	margin-left: -60%;
+}
+
+}
 
 
 video {
@@ -882,7 +1029,7 @@ input, select, textarea {
   		left: -350px;
  		top:  -280px;
 	}
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 600px) {
 
 		h1 {
 			font-size: 2em;
@@ -1960,7 +2107,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 600px) {
 
 			.row {
 				display: flex;
@@ -2848,7 +2995,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 600px) {
 
 			.features section {
 				padding: 2.5em 1.5em 0.1em 5.5em ;
@@ -3633,7 +3780,7 @@ ul.a {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 600px) {
 
 			.split > * {
 				margin: 3em 0 0 0;
@@ -3775,7 +3922,7 @@ ul.a {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 600px) {
 
 			.spotlights > section > .image {
 				height: 50vh;
@@ -3884,7 +4031,7 @@ ul.a {
 
 			}
 
-			@media screen and (max-width: 736px) {
+			@media screen and (max-width: 600px) {
 
 				.wrapper > .inner {
 					padding: 3em 2em 1em 2em ;
@@ -3952,7 +4099,7 @@ ul.a {
 
 			}
 
-			@media screen and (max-width: 736px) {
+			@media screen and (max-width: 600px) {
 
 				.wrapper.fullscreen {
 					padding: 2em 0;
@@ -4082,7 +4229,7 @@ ul.a {
 							color: #ffffff;
 						}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 600px) {
 
 			#header {
 				padding: 1em 2em;
@@ -4134,7 +4281,7 @@ ul.a {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 600px) {
 
 			#sidebar + #wrapper {
 				padding-top: 0;
@@ -4519,7 +4666,7 @@ ul.a {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 600px) {
 
 			#sidebar {
 				display: none;
@@ -4549,7 +4696,7 @@ ul.a {
 
 			}
 
-			@media screen and (max-width: 736px) {
+			@media screen and (max-width: 600px) {
 
 				#intro p {
 					font-size: 1em;
@@ -4639,7 +4786,7 @@ ul.a {
   }
   
   /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 700px){
+  @media only screen and (max-width: 600px){
 	.modal-content {
 	  width: 100%;
 	}
