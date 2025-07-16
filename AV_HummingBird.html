@@ -7,7 +7,7 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Game Design - War-Angel</title>
+		<title>Game Design - AV-HummingBird</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -38,15 +38,15 @@
 					<section id="main" class="wrapper fullscreen fade-up">
 						<div class="inner">
 							
-							<h1 class="major">HV HummingBird</h1>
+							<h1 class="major">AV HummingBird</h1>
 								 <!-- <video width="800" height="auto" controls>
 								<source src="Video/SolarCageTrailer.mp4" type="video/mp4"> 
 							  </video> -->
 
 							  <ul class="a">
 							<div class="descriptbg">
-							<p>AV HummingBird is an in-development project I've recently joined made in Unreal Engine 5. The gameplay will be a mix of Halo/Arena-shooters combined with Mecha style action. There will also be a strong, character-driven story told through visual-novel sequences when not fighting. The story, visuals and gameplay will be an homage to 90's Mech Anime </p>
-							<p>Featuring a FPS-action focused gameplay with an emphasis in mastering movement, as the Mech can skate around, dash, double jump, combined with masterin the array of weapons and equipment the player can use.</p>
+							<p>AV HummingBird is an in-development project I've recently joined made in Unreal Engine 5. The gameplay will be a mix of Halo/Arena-shooters combined with Mecha style action. There will also be a strong, character-driven story told through visual-novel sequences when not fighting. The story, visuals and gameplay will be an homage to 90's Mech Anime. </p>
+							<p>Featuring a FPS-action focused gameplay with an emphasis in mastering movement, as the Mech can skate around, dash, double jump, combined with mastering the array of weapons and equipment the player can use.</p>
 							<p>Current progression of the overall game can be found on X, at: https://x.com/AV_Hummingbird </p>
 						
 							
@@ -139,32 +139,31 @@
 							<h2 class="major">Under the Hood:</h2>
 							<div style="margin-bottom: 150px;">
 							<div style= "float: left; margin-right: 30px;">
-								<img src="images/AV_HummingBird_EX1.gif" width="1050" height="500" alt="" style="max-width: 100%; height: auto;" >
+								<img src="images/AV_HummingBird_EX5.gif" width="1050" height="500" alt="" style="max-width: 100%; height: auto;" >
 							</div>
 								<div style="max-width: 1800px; padding-right: 500px; margin-bottom: 100px;">
-									Another bit of early work, testing the skating mechanic. Essentially our version of 'sprint' but instead the mech would move along with lower friction, allowing them to slide around. Here also is an idea of gaining speed when looking left or right to increase velocity.</div>
+									Another bit of early work, testing the movement feel of everything. In FPS games it's important to get the 'crunch' of moving down, and this includes subtle camera tilts, weapon sway when moving the camera and animation for walking. I used timelines, lerps and the animation blueprint to make procedural animation for walking, camera tilt and weapon sway.</div>
 							</div>
 
 							<div style="margin-bottom: 150px;">
 								<div style= "float: left; margin-right: 30px;">
-									<img src="images/AV_HummingBird_EX2.gif" width="1200" height="500" alt="" style="max-width: 100%; height: auto;" >
+									<img src="images/AV_HummingBird_EX4.gif" width="1200" height="500" alt="" style="max-width: 100%; height: auto;" >
 								</div>
 									<div style="max-width: 1800px; padding-right: 500px; margin-bottom: 100px;">
-										Movement is going to be a crucial part of our game, here I'm testing our dash mechanic going against a ramp, resulting in big air time. Giving players techniques they can discover can create endless gameplay potential!</div>
+										Here I'm testing the limb system for our game, basically I scripted in Blueprints to set up individual limb health using a Map, finding the key based on a line trace that detects a surface physics material assigned to sections of the model and the top left of the screen is a debug to show what part the line trace hits. We feel the limb system will create interesting combat dynamics and encounters both for PVE and PVP, by trying to destroy parts of the body so the mecha has less functions, for example destroying the legs would cause the Mecha to leave skate mode or slow it down.</div>
 								</div>
-	
+						
 
 							<div style="margin-bottom: 80px;">
 							<div style= "float: right; margin-left: 30px;">
-								<img src="images/AV_HummingBird_EX3.gif" width="850" height="400" alt="" style="max-width: 100%; height: auto;">
+								<img src="images/AV_HummingBird_EX1.gif" width="850" height="400" alt="" style="max-width: 100%; height: auto;">
 							</div>
 								<div style="max-width: 500px; padding-left: 20px; margin-bottom: 40px;">
 									
-									As our project develops, I always try to utilize the latest features from Unreal Engine. Here I'm testing out the Chaos Particles system, to create destructable, a very crucial element in Mecha games.
+									As our project develops, I always try to utilize the latest features from Unreal Engine. Here I'm testing out the Chaos Particles system, to create destructables, a very crucial element in Mecha games. I want to design the Mecha around the fact it's a giant metal machine that stands so high up it breaks through the clouds. Being able to crash through buildings at high speed I think would be awesome.
 
 								</div>
 
-						
 									
 							
 							<!-- <div>
